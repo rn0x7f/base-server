@@ -1,0 +1,10 @@
+[package]
+name = "email-sender"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+lettre = { version = "0.10", features = ["tokio1", "tokio1-native-tls"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
